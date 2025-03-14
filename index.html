@@ -1,50 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sk">
+
 <head>
-    <meta charset="UTF-8"> <!-- Sets the character encoding for the document -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper responsive behavior on mobile devices -->
-    <title>HomePage</title> <!-- Sets the title of the webpage -->
-    <link href="css/style.css" rel="stylesheet"> <!-- Links the external CSS file -->
-    <script src="scripts/javascript.js"></script> <!-- Links the external JS file -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slovakian Campaign 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.0/scrollreveal.min.js"></script>
 </head>
+
 <body>
-    <!-- Header Section with Logo -->
+    <!-- Header Section -->
     <header>
-        <h1>Website Header</h1> <!-- Main title of the website -->
-        <img src="images/logo.png" alt="Logo" class="logo"> <!-- Displays a logo image aligned to the right -->
+        <div class="navbar">
+            <a href="#home" class="logo">Slovakian Campaign</a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#membership">Membership & Fees</a></li>
+                    <li><a href="#donations">Donations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="index.html">Home</a> <!-- Navigation link to Home page -->
-        <a href="pages/aboutus.html">AboutUs</a> <!-- Navigation link to About page -->
-        <a href="pages/members.html">Members</a> <!-- Navigation link to Membership page -->
-        <a href="pages/courses.html">Courses</a> <!-- Navigation link to Course page -->
-        <a href="pages/educationgames.html">EducationGames</a> <!-- Navigation link to educationgames page -->
-        <a href="pages/events.html">Events</a> <!-- Navigation link to Event page -->
-    </nav>
+    <!-- Hero Section with Parallax Effect -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Building a Better Slovakia</h1>
+            <p>Together, we can create a sustainable future for Slovakia.</p>
+            <a href="#membership" class="cta-button">Join the Movement</a>
+        </div>
+        <div class="parallax-bg"></div>
+    </section>
 
-<!-- Main Content Area with Two Sections -->
-<main class=mainpage>
-     <h2>Welcome to our Website</h2> <!-- Main heading for content section -->
-     <p>This is the main content area where information is displayed.</p> <!-- Short description of the page -->
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="section-container">
+            <div class="section-image">
+                <!-- Ensure that the image path is correct and matches your folder structure -->
+                <img src="images/slovak-scenery.jpg" alt="Slovakian Scenery">
+            </div>
+            <div class="section-text">
+                <h2>About Us</h2>
+                <p>We are a forward-thinking movement, bringing together Slovakian citizens dedicated to making a positive impact on the future. Our platform fosters unity, collaboration, and sustainable progress. We’re committed to transparency and creating lasting change.</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="sections"> <!-- Container to hold two sections side by side -->
-        <section class="section">
-            <h3>Section 1</h3> <!-- Heading for the first section -->
-            <p>Content for the first section.</p> <!-- Description inside first section -->
-        </section>
-        <section class="section">
-            <h3>Section2</h3> <!-- Heading for the second section -->
-            <p>Content for the second section.</p> <!-- Description inside second section -->
-        </section>
-    </div>
-</main>
-    
-<!-- Footer Section -->
-<footer>
-    <p>&copy; 2025 Simple Layout. All rights reserved.</p> <!--Footer copyright information -->
+    <!-- Membership and Fees Section -->
+    <section id="membership" class="membership">
+        <div class="section-container">
+            <div class="section-text">
+                <h2>Membership & Fees</h2>
+                <p>Be a part of the future! Choose your membership plan to support Slovakia’s progress. Together, we can build a prosperous future.</p>
+            </div>
+            <div class="section-image">
+                <img src="images/membership.jpg" alt="Membership Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Donations Section -->
+    <section id="donations" class="donations">
+        <div class="section-container">
+            <div class="section-image">
+                <img src="images/donation.jpg" alt="Donation">
+            </div>
+            <div class="section-text">
+                <h2>Support the Cause</h2>
+                <p>Your generous donations help us make Slovakia a better place for all. Every contribution, big or small, makes a lasting impact.</p>
+                <form action="submit_donation.php" method="POST">
+                    <label for="donation-amount">Choose Amount:</label>
+                    <select id="donation-amount" name="donation-amount">
+                        <option value="10">€10</option>
+                        <option value="25">€25</option>
+                        <option value="50">€50</option>
+                        <option value="100">€100</option>
+                        <option value="custom">Other Amount</option>
+                    </select>
+                    <button type="submit" class="cta-button">Donate Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <div class="section-text">
+                <h2>Contact Us</h2>
+                <p>We’d love to hear from you. Feel free to reach out with any questions or to get involved.</p>
+                <form action="submit_form.php" method="POST">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="section-image">
+                <img src="images/contact.jpg" alt="Contact">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Slovakian Campaign. All rights reserved.</p>
+        <p>Follow us: 
+            <a href="https://facebook.com/slovakcampaign">Facebook</a> | 
+            <a href="https://twitter.com/slovakcampaign">Twitter</a> | 
+            <a href="https://instagram.com/slovakcampaign">Instagram</a>
+        </p>
     </footer>
+
+    <script>
+        // Scroll Reveal for Animations
+        ScrollReveal().reveal('.section-container', {
+            distance: '50px',
+            duration: 1000,
+            delay: 200,
+            easing: 'ease-in-out',
+            origin: 'bottom',
+            interval: 200
+        });
+    </script>
 </body>
+
 </html>
-    </footer>
