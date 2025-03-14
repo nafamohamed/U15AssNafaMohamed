@@ -1,29 +1,195 @@
-/* Reset default margin and padding for a consistent layout */ 
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font */
 body {
-   font-family: Arial, sans-serif; /* Sets the default font style */ 
-   margin: 0;
-   padding: 0;
-   text-align: center; /* Centers text globally */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
 }
 
-/* Header Styling */
+/* Header Section */
 header {
-   display: flex; /* Uses flexbox for layout */
-   justify-content: space-between; /* Pushes content to opposite sides */
-  align-items: center; /* Aligns items vertically */
-  padding: 20px;
-  background-color: #f4f4f4; /* Light grey background */
-  border-bottom: 2px solid #ddd; /* Adds a subtle bottom border */
+    background-color: rgba(0, 57, 166, 0.8);
+    color: white;
+    padding: 20px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-/*Logo Styling */
- .logo { 
-    max-width: 100px; /* Restricts logo size */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Navigation Bar Styling */
-nav {
- 
-   background-color: #333; /* Dark background for contrast */
-   padding: 10px;
+.navbar .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar nav ul li {
+    margin: 0 20px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #d52b1e;
+}
+
+/* Hero Section with Parallax Effect */
+.hero {
+    background: url('images/slovak-scenery.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+    animation: fadeIn 5s ease-in-out infinite alternate;
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #d52b1e;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0051a0;
+}
+
+/* Section Layout */
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-image {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+}
+
+.section-text {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.section-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0039a6;
+}
+
+.section-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.section-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Section */
+footer {
+    background-color: #0039a6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styles */
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1.1rem;
+}
+
+form button {
+    background-color: #0039a6;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0051a0;
 }
