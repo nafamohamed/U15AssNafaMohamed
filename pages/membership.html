@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slovakian Charity - Slovak United</title>
+    <title>Slovakian Charity - Dates & Fees</title>
     <style>
+        /* General body and page styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            background-color: #f4f4f4; /* Light gray background */
         }
 
         header {
-            background-color: #000000;
+            background-color: #333;
             color: white;
             padding: 1rem 0;
             text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
         }
 
         nav {
@@ -36,13 +46,62 @@
             text-decoration: underline;
         }
 
-        section {
+        /* Main content area for Membership & Fees */
+        #membership {
+            background-color: #fffafa; /* Light pink background for Membership section */
             padding: 2rem;
-            margin: 1rem;
-            border: 1px solid #ddd;
-            background-color: #f9f9f9;
+            margin: 2rem auto;
+            width: 80%;
+            max-width: 1200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
 
+        #membership h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        .fee-option {
+            margin-bottom: 2rem;
+        }
+
+        .fee-option h3 {
+            color: #444;
+            margin-bottom: 1rem;
+        }
+
+        .fee-option ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .fee-option li {
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .button {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer styles */
         footer {
             background-color: #333;
             color: white;
@@ -51,41 +110,12 @@
             margin-top: 2rem;
         }
 
-        .button {
-            background-color: #4CAF50; /* Green */
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 5px;
+        /* Responsive design for smaller screens */
+        @media screen and (max-width: 768px) {
+            #membership {
+                width: 90%;
+            }
         }
-
-        .button:hover {
-            background-color: #3e8e41;
-        }
-
-        .image-container {
-            text-align: center; /* Centers the image horizontally */
-        }
-
-        .image-container img {
-            max-width: 100%;   /* Ensures image doesn't exceed container width */
-            height: auto;     /* Maintains aspect ratio */
-        }
-
-        /* Specific section styling (optional) */
-        #home { background-color: #e6f7ff; }
-        #about { background-color: #f0fff0; }
-        #membership { background-color: #fffafa; }
-        #donations { background-color: #f5f5dc; }
-        #contact { background-color: #ffffe0; }
-
-
     </style>
 </head>
 <body>
@@ -102,66 +132,55 @@
         <a href="donations.html">Donations</a> |
         <a href="contactus.html">Contact Us</a>
     </nav>
-        </ul>
-        <p>At Slovenské Vzdelávacie Centrum – South Manchester, we divide our academic year into four terms: Autumn, Winter, Spring, and Summer. This structure allows us to build learning themes and activities around seasonal and cultural events, while also ensuring alignment with South Manchester (Trafford Council) school holidays.</p>
 
-<p>We offer Saturday Slovak language lessons at two locations:</p>
+    <section id="membership">
+        <h2>Membership & Fees</h2>
+        <p>We offer two flexible payment options:</p>
+        
+        <!-- Term Fees -->
+        <div class="fee-option">
+            <h3>Term Fees</h3>
+            <p>Our term fees are structured as follows:</p>
+            <ul>
+                <li><strong>Autumn Term (7 weeks):</strong> £84</li>
+                <li><strong>Winter Term (5 weeks):</strong> £60</li>
+                <li><strong>Spring Term (10 weeks):</strong> £120</li>
+                <li><strong>Summer Term (6 weeks):</strong> £72</li>
+            </ul>
+        </div>
 
-<p> Morning (AM) Sessions: 10:00 – 12:00 at The Firs Primary School.</p> 
- <p>Afternoon (PM) Sessions: 14:00 – 16:00 at Sale High School.</p>
+        <!-- Pay-As-You-Go Option -->
+        <div class="fee-option">
+            <h3>Pay-As-You-Go</h3>
+            <p>If you prefer flexibility, our Pay-As-You-Go option is available:</p>
+            <ul>
+                <li><strong>Price per session:</strong> £13 per Saturday</li>
+                <li><strong>Sibling Discount:</strong> 25% off each additional sibling</li>
+            </ul>
+            <p><strong>Example of Fees for Siblings:</strong></p>
+            <ul>
+                <li>First Child: £13</li>
+                <li>Second Child (25% Discount): £9.75</li>
+                <li>Total for Two Siblings: £22.75</li>
+                <li>Third Child (25% Discount): £9.75</li>
+                <li>Total for Three Siblings: £32.50</li>
+            </ul>
+        </div>
 
-<p>Although we primarily serve South Manchester, we welcome students from all areas.</p>
-    <p> Autumn Term:
+        <!-- Sibling Discount Explanation -->
+        <div class="fee-option">
+            <h3>Sibling Discount</h3>
+            <p>Each additional sibling receives a 25% discount on their session fee.</p>
+        </div>
 
-🍂The Autumn term will run from 2nd November 2024 to 14th December 2024, lasting for 7 weeks.</p> <p> A Christmas holiday will follow after the term ends🎄.</p>
-
-<p> Winter Term:
-
-❄️The Winter term will start on 11th January 2025 and end on 8th February 2025, lasting for 5 weeks.</p> A February holiday will follow after the term ends.</p>
-
-<p> Spring Term:
-
-📚The Spring term will begin on 1st March 2025 and end on 17th May 2025, lasting for 10 weeks.</p> <p>The Easter holiday will take place during this period, with no classes on 12th and 19th April🐇. A May holiday will follow after the term ends.</p>
-
-<p> Summer Term:
-
-☀️The Summer term will run from 7th June 2025 to 12th July 2025, lasting for 6 weeks.</p> <p>A summer holiday will follow after the term ends.</p>
-    <p>Fees and Payment Options
-
-We offer two flexible payment options: Term Fees for committed learners and a Pay-As-You-Go option for families who prefer flexibility.</p>
-
-<p>Term Fees</p>
-
-<p>· Autumn Term (7 weeks): £84 </p>
-
-<p>· Winter Term (5 weeks): £60 </p>
-
-<p>· Spring Term (10 weeks): £120 </p>
-
-<p>· Summer Term (6 weeks): £72 </p> 
-
-Sibling Discount: Each additional sibling receives a 25% discount.
-
-
-<p>Pay-As-You-Go Option
-
-For families who prefer flexibility, we offer a Pay-As-You-Go option:</p>
-
-<p> Price per session: £13 per Saturday.</p>
-
-<p>Sibling Discount: Each additional sibling receives a 25% discount on their session fee.</p>
-
-<p>Example of Fees for Siblings: First Child: £13</p> <p> Second Child (25% Discount):£9.75 Total for Two Siblings:£22.75</p> <p> Third Child (25% Discount): £9.75 Total for Three Siblings: £32.50</p>
-
-
-<p>Monthly Membership (Coming Soon!)</p>
-
-<p>We are currently developing a monthly membership plan to provide additional flexibility and benefits. More details will be available soon.</p>
-
-<p>For payment details, sibling discounts, or any queries, please contact us.</p>
+        <!-- Button or Contact for More Info -->
+        <div class="button-container">
+            <a href="contactus.html" class="button">Contact Us for More Information</a>
+        </div>
     </section>
- <footer>
-        <p>&copy; 2023| Slovenské Vzdelávacie Centrum.  All rights reserved.</p>
+
+    <footer>
+        <p>&copy; 2023 | Slovenské Vzdelávacie Centrum. All rights reserved.</p>
     </footer>
 
 </body>
