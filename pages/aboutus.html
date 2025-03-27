@@ -3,130 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slovakian Charity - Slovak United</title>
+    <title>Slovakian Charity - Dates & Fees</title>
     <style>
+        /* General body and page styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            background-color: #f4f4f4; /* Light gray background */
         }
 
-        header {
-            background-color: #000000;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #444;
-            color: white;
-            padding: 0.5rem 0;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0 1rem;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        section {
+        /* Membership Section */
+        #membership {
+            background-color: #fffafa; /* Light pink background for Membership section */
             padding: 2rem;
-            margin: 1rem;
-            border: 1px solid #ddd;
-            background-color: #f9f9f9;
+            margin: 2rem auto;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
 
-        footer {
-            background-color: #333;
-            color: white;
+        #membership h2 {
             text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        .fee-option {
+            margin-bottom: 2rem;
+        }
+
+        .fee-option h3 {
+            color: #444;
+            margin-bottom: 1rem;
+        }
+
+        .fee-option ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .fee-option li {
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 1.5rem;
         }
 
         .button {
             background-color: #4CAF50; /* Green */
-            border: none;
             color: white;
             padding: 10px 20px;
-            text-align: center;
             text-decoration: none;
-            display: inline-block;
             font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
             border-radius: 5px;
+            display: inline-block;
         }
 
         .button:hover {
-            background-color: #3e8e41;
+            background-color: #45a049;
         }
 
-        .image-container {
-            text-align: center; /* Centers the image horizontally */
+        /* Responsive design for smaller screens */
+        @media screen and (max-width: 768px) {
+            #membership {
+                width: 90%;
+            }
         }
-
-        .image-container img {
-            max-width: 100%;   /* Ensures image doesn't exceed container width */
-            height: auto;     /* Maintains aspect ratio */
-        }
-
-        /* Specific section styling (optional) */
-        #home { background-color: #e6f7ff; }
-        #about { background-color: #f0fff0; }
-        #membership { background-color: #fffafa; }
-        #donations { background-color: #f5f5dc; }
-        #contact { background-color: #ffffe0; }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Slovenské Vzdelávacie Centrum</h1>
-        <p>Helping the People of Slovakia</p>
+        <p>Dates & Fees</p>
     </header>
 
-    <nav>
-        <a href="../index.html">Home</a> |
-        <a href="aboutus.html">About Us</a> |
-        <a href="membership.html">Dates & Fees</a> |
-        <a href="donations.html">Donations</a> |
-        <a href="contactus.html">Contact Us</a>
-    </nav>
-
     <section id="membership">
-        <p>Fees and Payment Options</p>
+        <h2>Membership & Fees</h2>
+        <p>We offer two flexible payment options:</p>
+        
+        <!-- Term Fees -->
+        <div class="fee-option">
+            <h3>Term Fees</h3>
+            <p>Our term fees are structured as follows:</p>
+            <ul>
+                <li><strong>Autumn Term (7 weeks):</strong> £84</li>
+                <li><strong>Winter Term (5 weeks):</strong> £60</li>
+                <li><strong>Spring Term (10 weeks):</strong> £120</li>
+                <li><strong>Summer Term (6 weeks):</strong> £72</li>
+            </ul>
+        </div>
 
-        <p>We offer two flexible payment options: Term Fees for committed learners and a Pay-As-You-Go option for families who prefer flexibility.</p>
+        <!-- Pay-As-You-Go Option -->
+        <div class="fee-option">
+            <h3>Pay-As-You-Go</h3>
+            <p>If you prefer flexibility, our Pay-As-You-Go option is available:</p>
+            <ul>
+                <li><strong>Price per session:</strong> £13 per Saturday</li>
+                <li><strong>Sibling Discount:</strong> 25% off each additional sibling</li>
+            </ul>
+            <p><strong>Example of Fees for Siblings:</strong></p>
+            <ul>
+                <li>First Child: £13</li>
+                <li>Second Child (25% Discount): £9.75</li>
+                <li>Total for Two Siblings: £22.75</li>
+                <li>Third Child (25% Discount): £9.75</li>
+                <li>Total for Three Siblings: £32.50</li>
+            </ul>
+        </div>
 
-        <p>Term Fees</p>
-        <p>· Autumn Term (7 weeks): £84</p>
-        <p>· Winter Term (5 weeks): £60</p>
-        <p>· Spring Term (10 weeks): £120</p>
-        <p>· Summer Term (6 weeks): £72</p> 
+        <!-- Sibling Discount Explanation -->
+        <div class="fee-option">
+            <h3>Sibling Discount</h3>
+            <p>Each additional sibling receives a 25% discount on their session fee.</p>
+        </div>
 
-        <p>Sibling Discount: Each additional sibling receives a 25% discount.</p>
-
-        <p>Pay-As-You-Go Option</p>
-        <p>Price per session: £13 per Saturday.</p>
-
-        <p>Sibling Discount: Each additional sibling receives a 25% discount on their session fee.</p>
-
-        <p>Example of Fees for Siblings: First Child: £13</p>
-        <p>Second Child (25% Discount): £9.75 Total for Two Siblings: £22.75</p>
-        <p>Third Child (25% Discount): £9.75 Total for Three Siblings: £32.50</p>
+        <!-- Button or Contact for More Info -->
+        <div class="button-container">
+            <a href="contactus.html" class="button">Contact Us for More Information</a>
+        </div>
     </section>
-
-    <footer>
-        <p>&copy; 2023 | Slovenské Vzdelávacie Centrum. All rights reserved.</p>
-    </footer>
 
 </body>
 </html>
