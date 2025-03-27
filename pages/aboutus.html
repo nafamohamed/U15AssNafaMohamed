@@ -3,131 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slovakian Charity - Dates & Fees</title>
+    <title>Slovakian Charity - Slovak United</title>
     <style>
-        /* General body and page styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            background-color: #f4f4f4; /* Light gray background */
         }
 
-        /* Membership Section */
-        #membership {
-            background-color: #fffafa; /* Light pink background for Membership section */
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
             padding: 2rem;
-            margin: 2rem auto;
-            width: 80%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            margin: 1rem;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
         }
 
-        #membership h2 {
+        footer {
+            background-color: #333;
+            color: white;
             text-align: center;
-            color: #333;
-            margin-bottom: 1.5rem;
-        }
-
-        .fee-option {
-            margin-bottom: 2rem;
-        }
-
-        .fee-option h3 {
-            color: #444;
-            margin-bottom: 1rem;
-        }
-
-        .fee-option ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .fee-option li {
-            font-size: 1.1rem;
-            margin: 0.5rem 0;
-        }
-
-        .button-container {
-            text-align: center;
-            margin-top: 1.5rem;
+            padding: 1rem 0;
+            margin-top: 2rem;
         }
 
         .button {
             background-color: #4CAF50; /* Green */
+            border: none;
             color: white;
             padding: 10px 20px;
+            text-align: center;
             text-decoration: none;
-            font-size: 16px;
-            border-radius: 5px;
             display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
         }
 
         .button:hover {
-            background-color: #45a049;
+            background-color: #3e8e41;
         }
 
-        /* Responsive design for smaller screens */
-        @media screen and (max-width: 768px) {
-            #membership {
-                width: 90%;
-            }
+        .image-container {
+            text-align: center; /* Centers the image horizontally */
         }
+
+        .image-container img {
+            max-width: 100%;   /* Ensures image doesn't exceed container width */
+            height: auto;     /* Maintains aspect ratio */
+        }
+
+        /* Specific section styling (optional) */
+        #home { background-color: #e6f7ff; }
+        #about { background-color: #f0fff0; }
+        #membership { background-color: #fffafa; }
+        #donations { background-color: #f5f5dc; }
+        #contact { background-color: #ffffe0; }
+
+
     </style>
 </head>
 <body>
 
     <header>
         <h1>Slovenské Vzdelávacie Centrum</h1>
-        <p>Dates & Fees</p>
+        <p>Helping the People of Slovakia</p>
     </header>
 
-    <section id="membership">
-        <h2>Membership & Fees</h2>
-        <p>We offer two flexible payment options:</p>
-        
-        <!-- Term Fees -->
-        <div class="fee-option">
-            <h3>Term Fees</h3>
-            <p>Our term fees are structured as follows:</p>
-            <ul>
-                <li><strong>Autumn Term (7 weeks):</strong> £84</li>
-                <li><strong>Winter Term (5 weeks):</strong> £60</li>
-                <li><strong>Spring Term (10 weeks):</strong> £120</li>
-                <li><strong>Summer Term (6 weeks):</strong> £72</li>
-            </ul>
+    <nav>
+        <a href="../index.html">Home</a> |
+        <a href="aboutus.html">About Us</a> |
+        <a href="membership.html">Dates & Fees</a> |
+        <a href="donations.html">Donations</a> |
+        <a href="contactus.html">Contact Us</a>
+    </nav>
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="image-container">
+            <img src="https://raw.githubusercontent.com/nafamohamed/U15AssNafaMohamed/refs/heads/main/images/Slovaks.webp" width="500" height="300">
         </div>
 
-        <!-- Pay-As-You-Go Option -->
-        <div class="fee-option">
-            <h3>Pay-As-You-Go</h3>
-            <p>If you prefer flexibility, our Pay-As-You-Go option is available:</p>
-            <ul>
-                <li><strong>Price per session:</strong> £13 per Saturday</li>
-                <li><strong>Sibling Discount:</strong> 25% off each additional sibling</li>
-            </ul>
-            <p><strong>Example of Fees for Siblings:</strong></p>
-            <ul>
-                <li>First Child: £13</li>
-                <li>Second Child (25% Discount): £9.75</li>
-                <li>Total for Two Siblings: £22.75</li>
-                <li>Third Child (25% Discount): £9.75</li>
-                <li>Total for Three Siblings: £32.50</li>
-            </ul>
-        </div>
+        <p>Slovenské Vzdelávacie Centrum – South Manchester was founded by a dedicated group of teachers with a shared vision: to create a Slovak educational and cultural centre that truly makes an impact.
 
-        <!-- Sibling Discount Explanation -->
-        <div class="fee-option">
-            <h3>Sibling Discount</h3>
-            <p>Each additional sibling receives a 25% discount on their session fee.</p>
-        </div>
+Driven by a passion for education, culture, and community, we worked tirelessly to establish a space where Slovak families could access quality learning opportunities and cultural activities.
 
-        <!-- Button or Contact for More Info -->
-        <div class="button-container">
-            <a href="contactus.html" class="button">Contact Us for More Information</a>
-        </div>
+After months of dedication, we proudly became a registered charity on 9th September 2024, a major milestone in our journey. Our official launch on 15th September was a moment of pride, celebrated alongside the Faculty of Education from Univerzita Mateja Bela and the Association of Slovak Schools and Community Centres in the UK.
+
+Since then, we have continued to grow, supporting Slovak-speaking families, students, and individuals in learning, connecting, and embracing Slovak culture together.</p>
+        <p>We run Saturday Slovak language lessons for children and adults, as well as cultural and community activities:
+
+· Morning Classes: 10:00 – 12:00 at The Firs Primary School
+
+· Afternoon Classes: 14:00 – 16:00 at Sale High School</p>
+        <h3>Our Key Programs Include:</h3>
+        <ul>
+            <li>Program 1: Education & Skills Program
+📚 Goal: Empower Slovakian individuals through education and career development.
+✅ Free English language classes
+✅ Job search assistance & CV workshops
+✅ Scholarships for students
+✅ Cultural integration seminars</li>
+<li>Program 2:Community Support & Well-being Program
+💙 Goal: Strengthen the Slovakian community and provide essential support.
+✅ Food & clothing assistance for families in need
+✅ Mental health & well-being workshops
+✅ Support groups for new arrivals
+✅ Elderly care & social activities</li>
+<li>Program 3:Youth & Sports Engagement Program
+⚽ Goal: Encourage youth participation and a healthy lifestyle.
+✅ Football & sports tournaments
+✅ Leadership training & youth mentorship
+✅ Art & cultural workshops for young Slovakians
+✅ School outreach programs</li>
+        </ul>
+        <p>Read our <a href="#">Annual Report</a> to learn more about our impact.</p>
     </section>
+<footer>
+        <p>&copy; © 2023 | Slovenské Vzdelávacie Centrum. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
