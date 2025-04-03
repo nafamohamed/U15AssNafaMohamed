@@ -50,33 +50,90 @@
             padding: 1rem 0;
             margin-top: 2rem;
         }
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+    }
 
-        .button {
-            background-color: #4CAF50; /* Green */
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
+    header {
+        background-color: #000000;
+        color: white;
+        padding: 1rem 0;
+        text-align: center;
+    }
 
-        .button:hover {
-            background-color: #3e8e41;
-        }
+    nav {
+        background-color: #444;
+        color: white;
+        padding: 0.5rem 0;
+        text-align: center;
+    }
 
-        .image-container {
-            text-align: center; /* Centers the image horizontally */
-        }
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 0 1rem;
+    }
 
-        .image-container img {
-            max-width: 100%;   /* Ensures image doesn't exceed container width */
-            height: auto;     /* Maintains aspect ratio */
-        }
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    section {
+        padding: 2rem;
+        margin: 1rem;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 2rem;
+    }
+
+    .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .button:hover {
+        background-color: #3e8e41;
+    }
+
+    .image-container {
+        text-align: center; /* Centers the image horizontally */
+    }
+
+    .image-container img {
+        max-width: 100%;   /* Ensures image doesn't exceed container width */
+        height: auto;     /* Maintains aspect ratio */
+    }
+
+    /* Fix for the About Us section background */
+    #about {
+        background-color: #f0fff0; /* Green background */
+        padding: 2rem;
+        border-radius: 10px;
+        min-height: 100vh; /* Ensures it covers full viewport height */
+        display: flex;
+        flex-direction: column;
+    }
+</style>
 
         /* Specific section styling (optional) */
         #home { background-color: #e6f7ff; }
