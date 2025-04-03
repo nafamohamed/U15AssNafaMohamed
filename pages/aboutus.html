@@ -124,26 +124,25 @@
         height: auto;     /* Maintains aspect ratio */
     }
 
-    /* Fix for the About Us section background */
+    /* Fix for the About Us section background and layout */
     #about {
         background-color: #f0fff0; /* Green background */
         padding: 2rem;
+        margin: 1rem;
         border-radius: 10px;
-        min-height: 100vh; /* Ensures it covers full viewport height */
-        display: flex;
-        flex-direction: column;
+        min-height: auto; /* Allow it to grow */
+        width: 90%;
+        margin: auto;
     }
+
+    /* Specific section styling */
+    #home { background-color: #e6f7ff; }
+    #about { background-color: #f0fff0; }
+    #membership { background-color: #fffafa; }
+    #donations { background-color: #f5f5dc; }
+    #contact { background-color: #ffffe0; }
 </style>
-
-        /* Specific section styling (optional) */
-        #home { background-color: #e6f7ff; }
-        #about { background-color: #f0fff0; }
-        #membership { background-color: #fffafa; }
-        #donations { background-color: #f5f5dc; }
-        #contact { background-color: #ffffe0; }
-
-
-    </style>
+ </style>
 </head>
 <body>
 
